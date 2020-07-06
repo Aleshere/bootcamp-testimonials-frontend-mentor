@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --darkBlue: hsl(240, 38%, 20%);
+    --grayishBlue: hsl(240, 18%, 77%);
+}
+
+body {
+    font-size: 32px;
+    width: 100%;
+    height: 100%;
+}
+
+a:visited {
+    color: blue;
+}
+
+.container {
+    width: 75%;
+    height: 85vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    flex-direction: row-reverse;
+    background: url(images/pattern-curve.svg), url(images/pattern-quotes.svg), url(images/pattern-bg.svg);
+    background-position: bottom left, top 35% left 12%, top 50% right 15%;
+    background-size: auto, 8%, 55%;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-wrap-1, .carousel-wrap-2 {
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: center;
+    transition: transform 1s;
+}
+
+.carousel-wrap-1 {
+    left: 0;
+}
+
+.carousel-wrap-2 {
+    left: 150%;
+}
+
+.carousel-1, .carousel-2 {
+    width: 100%;
+    position: relative;
+    right: -16%;
+    top: 16%;
+    z-index: 2;
+}
+
+.photo-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.photo-wrapper img {
+    width: 57%;
+    position: absolute;
+    right: 0;
+}
+
+img {
+    border-radius: 6px;
+}
+
+.profile-1, .profile-2 {
+    width: 60%;
+    margin: 0 auto;
+    position: absolute;
+    top: 38%;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+}
+
+.text {
+    font-size: 1.5rem;
+}
+
+blockquote {
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.arrows-container {
+    position: absolute;
+    width: 6rem;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    bottom: 24%;
+    right: 44.5%;
+    z-index: 3;
+    margin: auto 0;
+    box-shadow: 6px 6px 6px rgba(0,0,0,.2);
+}
+.arrows-container img {
+    cursor: pointer;
+    margin: 0 .7rem;
+}
+
+.attribution {
+    position: absolute;
+    font-size: 1rem;
+    top: calc(100vh - 5vh);
+    left: 50%;
+    transform: translateX(-50%);
+}
