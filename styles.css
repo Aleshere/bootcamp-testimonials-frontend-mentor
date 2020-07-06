@@ -130,3 +130,53 @@ p {
     left: 50%;
     transform: translateX(-50%);
 }
+
+
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 85%;
+        height: 95vh;
+        background-position: bottom left, top 65% left 50%, top 10% right 50%;
+        background-size: 60%, 30%, 100%;
+    }
+    .carousel-wrap-1, .carousel-wrap-2 {
+        width: 100%;
+    }
+    .carousel-1, .carousel-2 {
+        width: 100%;
+        top: 10%;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .photo-wrapper img {
+        width: 75%;
+        right: 10%;
+    }
+    .profile-1, .profile-2 {
+        width: 90%;
+        top: 60%;
+    }
+    .text {
+        font-size: 1rem;
+        text-align: center;
+    }
+    strong {
+        display: block;
+    }
+    .arrows-container {
+        bottom: 52%;
+        right: 35%;
+        margin: auto 0;
+        cursor: none;
+    }
+    .attribution {
+        width: 90%;
+        font-size: .7rem;
+        margin: 0 auto;
+        top: calc(100vh - 3vh);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
